@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Ресторан
+                        <input id="restoran" type="number" step="0.1" min="0.1" max="20" required /></span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Тип на гориво
+                        <input id="gorivo" type="number" step="0.1" min="0.1" max="20" required /></span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Адреса 1
+                        <input id="adresa" type="number" step="0.1" min="0.1" max="20" required /></span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Потрошувачка на 100км
+                        <input id="potrosuvaka" type="number" step="0.1" min="0.1" max="20" required /></span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Адреса 2
+                            <input id="adresa2" type="number" step="0.1" min="0.1" max="20" required /></span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Цена на литар
+                            <input id="litar" type="number" step="0.1" min="0.1" max="20" required /></span>
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <input id="maleInput" type="radio" name="gender" value="male" />
+                        <span class="gender">Male</span>
+                        <input id="femaleInput" type="radio" name="gender" value="famale" />
+                        <span class="gender">Female</span>
+                    </div>
+                </div>
+                <h4 class="errorMessage" id="errorMessage"></h4>
+                <div id="submitButton" class="button">
+                    <input type="submit" value="Register" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
